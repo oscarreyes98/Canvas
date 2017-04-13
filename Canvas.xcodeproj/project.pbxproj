@@ -14,6 +14,7 @@
 		F02A5C781E9F08FA009F306A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F02A5C761E9F08FA009F306A /* LaunchScreen.storyboard */; };
 		F02A5C831E9F08FA009F306A /* CanvasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A5C821E9F08FA009F306A /* CanvasTests.swift */; };
 		F02A5C8E1E9F08FA009F306A /* CanvasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A5C8D1E9F08FA009F306A /* CanvasUITests.swift */; };
+		F02A5C9C1E9F099C009F306A /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02A5C9B1E9F099C009F306A /* CanvasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F02A5C891E9F08FA009F306A /* CanvasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanvasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02A5C8D1E9F08FA009F306A /* CanvasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasUITests.swift; sourceTree = "<group>"; };
 		F02A5C8F1E9F08FA009F306A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F02A5C9B1E9F099C009F306A /* CanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				F02A5C741E9F08FA009F306A /* Assets.xcassets */,
 				F02A5C761E9F08FA009F306A /* LaunchScreen.storyboard */,
 				F02A5C791E9F08FA009F306A /* Info.plist */,
+				F02A5C9B1E9F099C009F306A /* CanvasViewController.swift */,
 			);
 			path = Canvas;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					F02A5C691E9F08FA009F306A = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = LX692C75AG;
 						ProvisioningStyle = Automatic;
 					};
 					F02A5C7D1E9F08FA009F306A = {
@@ -260,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F02A5C701E9F08FA009F306A /* ViewController.swift in Sources */,
+				F02A5C9C1E9F099C009F306A /* CanvasViewController.swift in Sources */,
 				F02A5C6E1E9F08FA009F306A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,10 +417,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = LX692C75AG;
 				INFOPLIST_FILE = Canvas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.Canvas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -424,10 +432,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = LX692C75AG;
 				INFOPLIST_FILE = Canvas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.Canvas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
